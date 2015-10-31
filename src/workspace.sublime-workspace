@@ -1,0 +1,329 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"zoom",
+				"zoom_matrix"
+			],
+			[
+				"trans",
+				"translation_matrix"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/conmc/Desktop/Rust Projects/sat_collision/Cargo.toml",
+			"settings":
+			{
+				"buffer_size": 169,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.rs",
+			"settings":
+			{
+				"buffer_size": 5551,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib.rs",
+			"settings":
+			{
+				"buffer_size": 26,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Local Dependency"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"help",
+			"dir",
+			"rustc",
+			"rust",
+			"rustc",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/conmc/Desktop/Rust Projects/sat_collision",
+		"/C/Users/conmc/Desktop/Rust Projects/sat_collision/src"
+	],
+	"file_history":
+	[
+		"/C/Users/conmc/AppData/Roaming/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/C/Users/conmc/Desktop/Rust Projects/sat_collision/src/entities/mod.rs",
+		"/C/Users/conmc/Desktop/Rust Projects/sat_collision/src/entities/object.rs",
+		"/C/Users/conmc/Desktop/Rust Projects/sat_collision/src/rendering/rendering.rs",
+		"/C/Users/conmc/Documents/Projects/rust/src/main.rs",
+		"/C/Users/conmc/Documents/Projects/rust/Cargo.toml",
+		"/C/Users/conmc/Desktop/Rust Projects/sat_collision/src/rendering/mod.rs",
+		"/C/Users/conmc/Desktop/Rust Projects/sat_collision/src/main.rs",
+		"/C/Users/conmc/Documents/Projects/rust/src/vector2.rs",
+		"/C/Users/conmc/Desktop/Rust Projects/test_project/src/main.rs",
+		"/C/Users/conmc/Documents/Projects/rust/src/lib.rs",
+		"/C/Users/conmc/Desktop/Rust Projects/test_project/Cargo.toml",
+		"/C/Users/conmc/Documents/Projects/aceeri.com/index.js",
+		"/C/Users/conmc/Desktop/Rust Projects/TestProject/src/main.rs",
+		"/C/Users/conmc/Desktop/Rust Projects/TestProject/Cargo.toml",
+		"/C/Users/conmc/Documents/Projects/rust/glutin/build.rs",
+		"/C/Users/conmc/Documents/Projects/rust/glutin/tests/headless.rs",
+		"/C/Users/conmc/Documents/Projects/rust/glutin/src/window.rs",
+		"/C/Users/conmc/Documents/Projects/rust/glutin/src/platform/windows/mod.rs",
+		"/C/Users/conmc/Documents/Projects/Rust/main.rs",
+		"/C/Users/conmc/Documents/Projects/rust/.cargo/config",
+		"/C/Users/conmc/Documents/Projects/rust/target/debug/librust.rlib",
+		"/A/School/Introduction.cpp"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"],\n",
+			"{\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "C:\\Users\\conmc\\Desktop\\Rust Projects\\sat_collision"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/conmc/Desktop/Rust Projects/sat_collision/Cargo.toml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								169
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.rs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5551,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5074,
+								5074
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rust/Rust.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2235.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib.rs",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 26,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rust/Rust.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 237.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

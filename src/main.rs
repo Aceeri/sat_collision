@@ -69,34 +69,8 @@ fn main() {
     //let image = image::load(Cursor::new(&include_bytes!("../fsm.png")[..]), image::PNG).unwrap();
     //let texture = glium::texture::Texture2d::new(&display, image).unwrap();
 
-    let vertex_shader_src = r#"
-        #version 140
-
-        in vec2 position;
-        in vec2 tex_coords;
-        out vec2 v_tex_coords;
-
-        uniform mat4 matrix;
-
-        void main() {
-            v_tex_coords = tex_coords;
-            gl_Position = matrix * vec4(position, 0.0, 1.0);
-        }
-    "#;
-
-    let fragment_shader_src = r#"
-        #version 140
-
-        in vec2 v_tex_coords;
-        out vec4 color;
-
-        uniform sampler2D tex;
-
-        void main() {
-            //color = texture(tex, v_tex_coords);
-            color = vec4(1.0, 0.0, 0.0, 1.0);
-        }
-    "#;
+    let vertex_shader_src = rendering::vertex_src();
+    let fragment_shader_src = rendering::fragment_src();
 
     let program = glium::Program::from_source(&display, vertex_shader_src, fragment_shader_src, None).unwrap();
 

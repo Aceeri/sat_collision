@@ -22,6 +22,14 @@
 				"buffer_size": 5551,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"file": "/C/Users/Aceeri/Desktop/hierarchy/src/main.rs",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
 		}
 	],
 	"build_system": "",
@@ -67,7 +75,6 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/Aceeri/Desktop/Rust/sat_collision",
 		"/C/Users/Aceeri/Desktop/Rust/sat_collision/src",
 		"/C/Users/Aceeri/Desktop/Rust/sat_collision/src/rendering"
 	],
@@ -112,7 +119,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -138,6 +145,34 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/Aceeri/Desktop/hierarchy/src/main.rs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rust/Rust.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

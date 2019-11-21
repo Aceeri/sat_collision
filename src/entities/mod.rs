@@ -4,7 +4,7 @@ extern crate cgmath;
 pub mod object;
 
 use entities::object::*;
-use cgmath::{ Vector, Vector2 };
+use cgmath::{ Vector2, InnerSpace };
 
 #[derive(Debug)]
 struct NormalDot {
@@ -14,14 +14,13 @@ struct NormalDot {
 }
 
 pub fn colliding(actor1: &mut Actor, actor2: &mut Actor) -> bool {
-
 	for hitbox1 in &actor1.hitboxes {
 		let hitbox1_center: Vector2<f32>;
 		let mut dots: Vec<NormalDot> = Vec::new();
 
 		match hitbox1 {
 			&Hitbox::Polygon { ref offset, ref vertices } => {
-				hitbox1_center = actor1.position.add_v(offset);
+				hitbox1_center = actor1.position + offset;
 
 				for (index_inner, item_inner) in vertices.iter().enumerate() {
 					let mut layer: NormalDot = NormalDot {
@@ -31,7 +30,7 @@ pub fn colliding(actor1: &mut Actor, actor2: &mut Actor) -> bool {
 					};
 
 					for (index_outer, item_outer) in vertices.iter().enumerate() {
-						let dot = (item_outer.add_v(&hitbox1_center)).dot(&layer.normal);
+						let dot = (item_outer + &hitbox1_center).dot(layer.normal);
 
 						if index_outer == 0 {
 							layer.max = dot;
@@ -49,7 +48,7 @@ pub fn colliding(actor1: &mut Actor, actor2: &mut Actor) -> bool {
 				}
 			},
 			&Hitbox::Circle { ref offset, ref radius } => {
-				hitbox1_center = actor1.position.add_v(offset);
+				hitbox1_center = actor1.position + offset;
 			}
 		}
 
@@ -58,7 +57,7 @@ pub fn colliding(actor1: &mut Actor, actor2: &mut Actor) -> bool {
 
 			match hitbox2 {
 				&Hitbox::Polygon { ref offset, ref vertices } => {
-					hitbox2_center = actor2.position.sub_v(offset);
+					hitbox2_center = actor2.position - offset;
 					let mut colliding: bool = true;
 
 					for (index_inner, item_inner) in vertices.iter().enumerate() {
@@ -67,7 +66,7 @@ pub fn colliding(actor1: &mut Actor, actor2: &mut Actor) -> bool {
 						let mut max: f32 = 0.0;
 
 						for (index_outer, item_outer) in vertices.iter().enumerate() {
-							let dot = (item_outer.add_v(&hitbox2_center)).dot(&layer.normal);
+							let dot = (item_outer + &hitbox2_center).dot(layer.normal);
 
 							if index_outer == 0 {
 								max = dot;
@@ -92,7 +91,7 @@ pub fn colliding(actor1: &mut Actor, actor2: &mut Actor) -> bool {
 					println!("Colliding: {:?}", colliding);
 				},
 				&Hitbox::Circle { ref offset, ref radius } => {
-					hitbox2_center = actor2.position.sub_v(offset);
+					hitbox2_center = actor2.position - offset;
 				}
 			}
 		}
